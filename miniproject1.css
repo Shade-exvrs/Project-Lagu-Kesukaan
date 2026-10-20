@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: auto;
+    min-height: 100vh;
+}
+
+.container  {
+    background-image: linear-gradient(to top, rgb(147, 10, 10), rgba(255, 0, 0, 0.44));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    box-shadow: 0px 0px 20px 0px;
+    border-radius: 0px 0px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: rgba(158, 48, 27, 0.9);
+    font-family: "Pinyon Script", cursive;
+}
+
+.center-header * {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 1;
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+}
+
+.box-container > div {
+    max-width: 300px;
+    margin: 30px 0px 0px 0px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(141, 106, 106, 0.803);
+    border-radius: 10px;
+    box-shadow: 0px 23px 22px 3px rgba(0, 0, 0, 0.50);
+    transition: 0.8s;
+}
+
+.box-container > div > h3 {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.box-container > div > img {
+    border-radius: 5px 5px 5px 5px;
+    max-width: 300px;
+}
+
+.box-container > div:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(67, 61, 59, 0.9);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
